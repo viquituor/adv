@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;500&family=Lato:ital,wght@0,100;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;800&display=swap');
+@media only screen and (min-width: 600px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #292626;
+
+}
+main{
+    margin-top: 8rem;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.zap a:hover {
+    color: #ffffff;
+}
+.zap a{
+    color: #292626;
+}
+.tel a:hover{
+    color: #ffffff;
+}
+.tel a{
+    color: #292626;
+}
+
+.titulo-endereco a:hover{
+    color: #ffb801;
+}
+.titulo-endereco a{
+    color: #ffffff;
+}
+
+ul a {
+    color: #292626;
+}
+
+ul a:hover {
+    color: #ffb801;
+}
+.endereco a:hover{
+color: #ffb801;
+}
+.endereco a{
+    color: #ffffff;
+}
+
+.logo-nome a:hover {
+    color: #000000;
+}
+
+.logo-nome a {
+    color: #ffb801;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 4.25rem;
+    background-color: #ffffff;
+    padding: 5rem;
+}
+
+.menu nav {
+    
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-family: "Khand", sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.menu .logo-nome {
+    display: flex;
+    align-items: center;
+}
+
+.menu .logo {
+    width: 8rem; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção original */
+    margin-right: 4rem;
+    margin-top: -7rem;
+}
+
+.advocaciaalmeida {
+    color: #ffb801;
+    font-family: "Khand", sans-serif;
+    font-weight: 100;
+    font-size: 5rem;
+    text-transform: uppercase; /* Adicionado para tornar o texto em maiúsculas */
+    margin-left: -6rem;
+    margin-top: -1rem;
+}
+
+
+.menu nav ul {
+    display: flex;
+    margin-left: 35rem;
+    margin-right: 4rem;
+    gap: 2rem;
+    margin-top: -6.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*todo o cabeçalho e menu daqui para cima */
+
+
+.hero {/*max-width: 800px;
+margin: auto;
+padding: 2rem;*/
+max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+
+    padding: 0rem 2rem ;
+    margin: auto;
+    overflow: clip;
+
+    align-items: center;
+}
+
+.hero-header h1{
+    color:#ffffff ;
+    font-weight:900 ;
+    font-size: 3rem;
+    margin-top: -2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hero-header h2{
+    color:#ffffff ;
+    font-weight:100 ;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+hr{
+    color: #ffb801;
+    align-items: center;
+    margin-top: 2rem;
+}
+.hero img {
+    width: 60rem; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção original */
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 2rem;
+}
+.hero img:hover {
+    transform: rotateY(180deg);
+}
+
+/*hero daqui para cima*/
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    gap: 3.5rem;
+}
+.instro{
+    color: #292626;
+}
+
+.atuacao {
+    flex: 1 1 22rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem; /* Adicione este trecho para espaçamento na borda esquerda */
+    margin-right: 2rem; /* Adicione este trecho para espaçamento na borda direita */
+    position: relative;
+    perspective: 1500px;
+}
+
+.atuacao:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.atuacao:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.atuacao .card-front,
+.atuacao .card-back {
+    background-color: #ffb801;
+    border-radius: 5rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.atuacao .card-back {
+    transform: rotateY(-180deg);
+    background-color: #292626;
+    border-radius: 5rem;
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.direito {
+    font-family: "Outfit", sans-serif;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+/*daqui para cima ha as areas de atuação*/
+.linha-adress{
+    margin-top: 16rem;
+}
+
+.endereco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    width: 100%;
+    height: auto;
+    gap: 3.5rem;
+}
+.mapa{
+    color: #ffb801;
+    font-weight: 100; /* Alterado para um valor válido */
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-left: 15rem;
+    text-transform: uppercase;
+}
+
+.titulo-endereco{
+    color:#ffffff ;
+    font-weight:900 ;
+    font-size: 10rem;
+    margin-top: -4rem;
+    margin-left: 19rem;
+    text-transform: uppercase;
+
+}
+.linha-endereco{
+    
+    align-items: center;
+    margin-top: -5.5rem;
+   
+}
+
+.header-endereco{
+    text-align: left;
+    margin-top: 0rem;
+   
+}
+.cidade,
+.bairro,
+.rua,
+.numero {
+    color: #ffb801;
+    font-weight: 100; /* Alterado para um valor válido */
+    font-size: 5rem;
+    margin-top: 0rem;
+    margin-left: 10rem;
+    text-transform: uppercase;
+}
+
+.contatos-adv{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    width: 100%;
+    height: auto;
+    gap: 3.5rem;
+}
+.contatos-titulo{
+
+    color:#ffb801 ;
+    font-weight:900 ;
+    font-size: 10rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+
+    margin-right: 20rem;
+   
+}
+.card-advs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background-color: #ffffff;
+    width: 100%;
+    height: 60hv;
+    gap: 2rem;
+    margin-top: -5rem;
+}
+.advs{
+    background-color: #ffb801;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.advs img{
+    width: 9rem; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção original */
+    border-radius: 20rem;
+    margin-top: 2rem;
+    display: inline-block;
+    
+}
+.nome,
+.oab{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.contatos-end{
+    background-color: #ffb801;
+    text-align: left;
+
+    width: 100%;
+    height: 60hv;
+    gap: 3.5rem;
+} 
+
+    .zap{
+        color: #292929;
+        font-size: 3rem;
+        font-weight: 900;
+        margin-left: 12rem;
+        
+    }
+.tel{
+    color: #292626;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-left: 27rem;
+}
+
+.mail {
+    color: #292929;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-left: 12rem;
+   
+}
+
+/* rodape daqui para baixo*/
+.footer{
+    background-color: #292626;
+    text-align: center;
+    align-items: center;
+   /* display: flex;
+    flex-wrap:wrap ;*/
+    width: 100%;
+    height: 60hv;
+    gap: 4rem;
+}
+.logo-end{
+    
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+   margin-top: -6.5rem;
+    
+}
+
+
+.logo-end .logo {
+    width: 8rem; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção original */
+    margin-right: 6rem;
+    margin-top: 7rem;
+}
+
+.advocaciaalmeida {
+    color: #ffb801;
+    font-family: "Khand", sans-serif;
+    font-weight: 100;
+    font-size: 5rem;
+    text-transform: uppercase; /* Adicionado para tornar o texto em maiúsculas */
+    margin-left: -6rem;
+    margin-top: -1rem;
+}
+.dev{
+    display: block;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 6rem;  
+    margin-bottom: 4rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+.copy{
+    display: block;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 6rem;  
+    margin-bottom: 4rem;
+}
+}
+  /* Estilos para telas menores (mobile) */
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0;
+    }
+    
+    html {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+    
+    body {
+        /*max-width: auto;*/
+        background-color: #292626;
+       
+    }
+    
+    .linha-home{
+        height: 0;
+    }
+    
+    ul{
+        text-decoration: none;
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: #000000;
+    }
+    
+    a:link {
+        color: #000000;
+    }
+    
+    a:hover {
+        color: #ffb801;
+    }
+    
+    .logo-nome a {
+        text-decoration: none;
+    }
+    
+    .logo-nome a:hover {
+        color: #000000;
+    }
+    
+    .logo-nome a:visited {
+        color: #ffb801;
+    }
+    
+    .logo-nome a:link {
+        color: #ffb801;
+    }  
+
+    main{
+        margin-top: 4rem;
+    }
+
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0rem;
+        background-color: #ffffff;
+        padding: 2rem;
+    }
+    
+    .menu nav {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000000;
+        font-family: "Khand", sans-serif;
+        font-weight: 300;
+        font-size: 0.7rem;
+    }
+    
+    .menu .logo-nome {
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu .logo {
+        width: 4rem; /* Ajuste a largura conforme necessário */
+        height: auto; /* Mantém a proporção original */
+        margin-right: 0rem;
+        margin-top: -2rem;
+    }
+    
+    .advocaciaalmeida {
+        color: #ffb801;
+        font-family: "Khand", sans-serif;
+        font-weight: 100;
+        font-size: 2rem;
+        text-transform: uppercase; /* Adicionado para tornar o texto em maiúsculas */
+        margin-left: 3.5rem;
+        margin-top: -2rem;
+    }
+    
+    
+    .menu nav ul {
+        display: flex;
+        margin-left: 4rem;
+        margin-right: 0rem;
+        gap: 2rem;
+        margin-top: -1rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+/* header e menu em cima*/
+/* hero aqui em baixo*/
+
+.hero{
+   
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6rem;
+
+    padding: 0rem 2rem ;
+    margin: auto;
+    overflow: clip;
+
+    align-items: center;
+}
+
+.hero-header h1{
+    color:#ffffff ;
+    font-weight:900 ;
+    font-size: 1rem;
+    margin-top: 0rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hero-header h2{
+    color:#ffffff ;
+    font-weight:900 ;
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+hr{
+    color: #ffb801;
+    align-items: center;
+    margin-top: 0rem;
+}
+    .hero img {
+        width: 18rem; /* Ajuste a largura conforme necessário */
+        height: auto; /* Mantém a proporção original */
+        margin-left:-3rem;
+        margin-right: 0rem;
+        margin-top:0rem;
+    }
+
+
+    /*hero acaba aqui*/
+
+    /*em baixo tem as atuaçoes*/
+
+    .conteudo {
+        background-color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    width: 100%;
+    height: 100%;
+        
+       
+       
+    }
+    .back-instro{
+         background-color: #ffffff;
+         width: 100%;
+         height: auto;
+         text-align: center;
+         align-items: center;
+    }
+    .instro{
+    color:#292626 ;
+    font-weight:900 ;
+    font-size: 0.9rem;
+    
+   
+    text-transform: uppercase;
+    }
+
+    .atuacao {
+        flex: 1 1 20rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: 2rem; /* Adicione este trecho para espaçamento na borda esquerda */
+        margin-right: 2rem; /* Adicione este trecho para espaçamento na borda direita */
+        position: relative;
+        perspective: 1500px;
+    }
+    
+    .atuacao:hover .card-front {
+        transform: rotateY(180deg);
+    }
+    
+    .atuacao:hover .card-back {
+        transform: rotateY(0deg);
+    }
+
+    .atuacao .card-front,
+.atuacao .card-back {
+    background-color: #ffb801;
+    border-radius: 2rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.atuacao .card-back {
+    transform: rotateY(-180deg);
+    background-color: #292626;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.direito {
+    font-family: "Outfit", sans-serif;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.corres{font-size: 2.2rem;}
+
+    /*atuação acaba aqui e começa o endereço*/
+
+    .linha-adress{
+        margin-top: 16rem;
+    }
+    
+    .endereco{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       /* align-items: flex-start;*/
+        text-align: left;
+    
+        width: 100%;
+        height: auto;
+        gap: 3.5rem;
+    }
+    
+    .titulo-endereco{
+        color:#ffffff ;
+        font-weight:900 ;
+        font-size: 4rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        text-transform: uppercase;
+    
+    }
+    .linha-endereco{
+        
+        color: #292626;
+       margin-left: 0rem;
+    }
+    
+    .header-endereco{
+        display: flex;
+        /*flex-direction: column;*/
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-top: -9rem;
+       
+    }
+    .mapa{
+        color: #ffb801;
+        font-weight: 100; /* Alterado para um valor válido */
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        text-transform: uppercase;
+        margin-bottom: -6rem;
+    }
+    .mapa a:hover{
+        color: #ffffff;
+    }
+    .mapa a:link{
+        color: #ffb801;
+    }
+    .mapa a:visited{
+        color: #ffb801;
+    }
+    .cidade{
+        color: #ffb801;
+        font-weight: 100; /* Alterado para um valor válido */
+        font-size: 1.8rem;
+        text-align: left;
+        align-items: center;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        text-transform: uppercase;
+    }
+    .bairro,
+    .rua,
+    .numero {
+        color: #ffb801;
+        font-weight: 100; /* Alterado para um valor válido */
+        font-size: 2.5rem;
+        text-align: left;
+        align-items: center;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        text-transform: uppercase;
+    }
+    
+/*endereço daqui para cima, em baixo teremos advogados*/
+
+.contatos-adv{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+
+    width: 100%;
+    height: auto;
+    gap: 3.5rem;
+}
+.contatos-titulo{
+    color:#ffb801 ;
+    font-weight:900 ;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    margin-left: 0.4rem;
+    margin-top: -3rem;
+   
+}
+.card-advs{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+    margin-top: -5rem;
+}
+.advs{
+
+    background-color: #ffb801;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+    .advs img{
+        width: 5rem; /* Ajuste a largura conforme necessário */
+        height: auto; /* Mantém a proporção original */
+        border-radius: 20rem;
+        margin-top: 2rem;
+        display: inline-block;
+        
+    }
+
+    .nome,
+.oab{
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.contatos-end{
+    background-color: #ffb801;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 3.5rem;
+}
+    .zap{
+        color: #292929;
+        font-size: 1rem;
+        font-weight: 900;
+        margin-left:1rem;
+    }
+.tel{
+    color: #292626;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 5rem;
+}
+
+.mail {
+    color: #292929;
+    font-size: 1.7rem;
+    font-weight: 900;
+    margin-left:0.2rem;
+   
+}
+/*daqui pra baixo rodape*/
+
+.footer{
+    background-color: #292626;
+    text-align: center;
+    align-items: center;
+   /* display: flex;
+    flex-wrap:wrap ;*/
+    width: 100%;
+    height: 60hv;
+    gap: 4rem;
+}
+.logo-end{
+    
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+
+    
+}
+
+
+.logo-end .logo {
+    width: 5rem; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção original */
+    margin-right: 6rem;
+    margin-top: 1rem;
+}
+
+.logo-end .advocaciaalmeida {
+    color: #ffb801;
+    font-family: "Khand", sans-serif;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-transform: uppercase; /* Adicionado para tornar o texto em maiúsculas */
+    margin-left: -6rem;
+    margin-top: 22rem;
+}
+.dev{
+    display: block;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0rem;  
+    margin-bottom: 2rem;
+
+}
+.copy{
+    display: block;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;  
+    margin-bottom: 2rem;
+}
+}
